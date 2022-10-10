@@ -1,0 +1,223 @@
+libcompress-bzip2-perl (2.28-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 2.28.
+  * Add (back) version constraints to recommended packages.
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 22 Jul 2020 18:32:29 +0200
+
+libcompress-bzip2-perl (2.27-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Damyan Ivanov ]
+  * declare conformance with Policy 4.1.3 (no changes needed)
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ Xavier Guimard ]
+  * Email change: Xavier Guimard -> yadd@debian.org
+
+  [ Laurent Baillet ]
+  * fix lintian file-contains-trailing-whitespace warning
+
+  [ gregor herrmann ]
+  * debian/copyright: replace tabs with spaces / remove trailing
+    whitespace.
+  * debian/control: update Build-Depends for cross builds.
+  * debian/watch: use uscan version 4.
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+
+  [ gregor herrmann ]
+  * Update 'DEB_BUILD_MAINT_OPTIONS = hardening=+bindnow' to '=+all'.
+  * Import upstream version 2.27.
+  * Declare compliance with Debian Policy 4.5.0.
+  * Set Rules-Requires-Root: no.
+  * Drop unneeded version constraints and alternatives from Recommends.
+  * Annotate test-only build dependencies with <!nocheck>.
+  * Bump debhelper-compat to 13.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 01 Jun 2020 19:53:02 +0200
+
+libcompress-bzip2-perl (2.26-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 2.26.
+  * Declare compliance with Debian Policy 4.0.0.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 01 Jul 2017 20:20:02 +0200
+
+libcompress-bzip2-perl (2.25-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * Remove Ryan Niebur from Uploaders. Thanks for your work!
+
+  [ Nick Morrott ]
+  * Import upstream version 2.25
+  * Bump Standards-Version to 3.9.8 (no changes)
+  * Declare hardening=+bindnow for Compress/Bzip2/Bzip2.so
+  * Update debian/upstream/metadata
+
+ -- Nick Morrott <knowledgejunkie@gmail.com>  Mon, 21 Nov 2016 18:02:41 +0000
+
+libcompress-bzip2-perl (2.24-1) unstable; urgency=medium
+
+  * Team upload.
+  * Rename autopkgtest configuration file(s) as per new pkg-perl-
+    autopkgtest schema.
+  * Import upstream version 2.24
+
+ -- gregor herrmann <gregoa@debian.org>  Thu, 10 Dec 2015 18:13:34 +0100
+
+libcompress-bzip2-perl (2.22-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ gregor herrmann ]
+  * Add debian/upstream/metadata
+  * Import upstream version 2.19
+
+  [ Lucas Kanashiro ]
+  * Import upstream version 2.22
+  * Declare compliance with Debian policy 3.9.6
+
+ -- Lucas Kanashiro <kanashiro.duarte@gmail.com>  Thu, 13 Aug 2015 07:17:23 -0300
+
+libcompress-bzip2-perl (2.18-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ Niko Tyni ]
+  * Add autopkgtest support with Testsuite: autopkgtest-pkg-perl
+
+ -- Niko Tyni <ntyni@debian.org>  Mon, 15 Sep 2014 22:12:05 +0300
+
+libcompress-bzip2-perl (2.18-1) unstable; urgency=low
+
+  * Team upload.
+
+  [ Xavier Guimard ]
+  * Imported Upstream version 2.17
+
+  [ gregor herrmann ]
+  * New upstream release 2.18.
+  * Strip trailing slash from metacpan URLs.
+  * Add perl as alternative to Recommends.
+  * Declare compliance with Debian Policy 3.9.5.
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 12 Aug 2014 23:56:00 +0200
+
+libcompress-bzip2-perl (2.16-1) unstable; urgency=low
+
+  * Team upload.
+  * New upstream release.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 09 Aug 2013 19:55:30 +0200
+
+libcompress-bzip2-perl (2.15-1) unstable; urgency=low
+
+  [ Salvatore Bonaccorso ]
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ gregor herrmann ]
+  * debian/watch: remove obsolete comment.
+
+  [ Xavier Guimard ]
+  * Imported Upstream version 2.15
+  * Remove patches now included in upstream
+  * Add libcompress-raw-bzip2-perl and libio-compress-perl in recommended
+    dependencies
+  * Add libtest-pod-perl in build dependencies
+  * Update debian/copyright:
+    + update ppport.h copyright
+    + update years
+
+ -- Xavier Guimard <x.guimard@free.fr>  Sun, 05 May 2013 06:30:30 +0200
+
+libcompress-bzip2-perl (2.09-3) unstable; urgency=low
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ Ryan Niebur ]
+  * Email change: Ryan Niebur -> ryan@debian.org
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ gregor herrmann ]
+  * debian/control: update {versioned,alternative} (build) dependencies.
+
+  [ Xavier Guimard ]
+  * Update source format to 3.0 (quilt) and remove README.source
+  * Update debian/copyright (years and format)
+  * Update debian/rules to use "dh $@"
+  * Bump Standards-Version to 3.9.4
+  * Bump debhelper compatibility to 9 to get hardening flags
+  * Update patches
+
+ -- Xavier Guimard <x.guimard@free.fr>  Thu, 10 Jan 2013 06:07:24 +0100
+
+libcompress-bzip2-perl (2.09-2) unstable; urgency=low
+
+  * Take over for the Debian Perl Group; Closes: #507393, #507387 -- RFA
+  * debian/control: Added: Vcs-Svn field (source stanza); Vcs-Browser
+    field (source stanza); Homepage field (source stanza);
+    ${misc:Depends} to Depends: field. Changed: Maintainer set to Debian
+    Perl Group <pkg-perl-maintainers@lists.alioth.debian.org> (was: Timo
+    Schneider <timo.schneider@s2004.tu-chemnitz.de>).
+  * debian/watch: use dist-based URL.
+  * add me to Uploaders
+  * run 'dh-make-perl --refresh --dh 7'
+    - update to debhelper 7
+    - new copyright format
+    - install docs
+  * update to Policy version 3.8.0
+  * fix pod2man errors
+    - use quilt to make changes to upstream source
+  * Add debian/README.source to document quilt usage, as required by
+    Debian Policy since 3.8.0.
+  * move old maintainers direct changes to a quilt patch
+
+ -- Ryan Niebur <ryanryan52@gmail.com>  Mon, 01 Dec 2008 04:04:42 -0800
+
+libcompress-bzip2-perl (2.09-1.2) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Fix bug compressing empty files (closes: #464205)
+
+ -- Jeffrey Ratcliffe <Jeffrey.Ratcliffe@gmail.com>  Wed, 21 May 2008 20:55:33 +0200
+
+libcompress-bzip2-perl (2.09-1.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Conditionally remove $(TMP)/usr/share/perl5 (closes: #463555)
+
+ -- Stephen Gran <sgran@debian.org>  Sat, 05 Apr 2008 12:01:02 +0100
+
+libcompress-bzip2-perl (2.09-1) unstable; urgency=low
+
+  * New upstream release (Closes: #324698)
+
+ -- Timo Schneider <timo.schneider@s2004.tu-chemnitz.de>  Mon, 29 Aug 2005 13:07:35 +0200
+
+libcompress-bzip2-perl (2.08-1) unstable; urgency=low
+
+  * Initial Release (Closes: #317064).
+
+ -- Timo Schneider <timo.schneider@s2004.tu-chemnitz.de>  Sun,  3 Jul 2005 00:21:03 +0200

@@ -1,0 +1,10 @@
+t
+config.in
+bzlib-src/sample0.bz2
+bzlib-src/sample0.ref
+bzlib-src/sample1.bz2
+bzlib-src/sample1.ref
+bzlib-src/sample2.bz2
+bzlib-src/sample2.ref
+bzlib-src/sample3.bz2
+bzlib-src/sample3.ref
